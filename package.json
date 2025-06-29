@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "debug:tailwind": "tailwindcss -i ./src/app/globals.css -o ./tailwind.out.css --config tailwind.config.ts",
     "build": "next build",
     "check": "next lint && tsc --noEmit",
     "db:generate": "drizzle-kit generate",
@@ -43,6 +44,7 @@
     "prettier-plugin-tailwindcss": "^0.6.11",
     "tailwindcss": "^4.0.15",
     "tailwindcss-animate": "^1.0.7",
+    "tailwindcss-cli": "^0.1.2",
     "typescript": "^5.8.2",
     "typescript-eslint": "^8.27.0"
   },
