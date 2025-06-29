@@ -3,15 +3,15 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    "./src/**/*.{ts,tsx,js,jsx,html}",
+    "./app/**/*.{ts,tsx}",
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
   ],
   theme: {
-    extend: {
-      colors: {
-        border: "hsl(240, 5%, 84%)", // ⚠️ puedes personalizarlo
-      },
-    },
+    extend: {},
   },
   plugins: [],
 };
+
 export default config;
