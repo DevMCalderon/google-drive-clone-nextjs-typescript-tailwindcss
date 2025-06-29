@@ -41,6 +41,9 @@ export default function GoogleDriveClone() {
 
   return (
     <div className="min-h-screen bg-gray-900 p-8 text-gray-100">
+    
+    <div className="bg-red-500 text-white text-3xl p-10"> está funcionando!</div>
+    
       <div className="mx-auto max-w-6xl">
         <div className="mb-6 flex items-center justify-between">
           <div className="flex items-center">

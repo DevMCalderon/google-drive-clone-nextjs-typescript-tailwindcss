@@ -19,7 +19,9 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${geist.variable}`} suppressHydrationWarning>
+    <div className="bg-red-500 text-white text-3xl p-10"> está funcionando!</div>
       <body>{children}</body>
+      
     </html>
   );
 }
