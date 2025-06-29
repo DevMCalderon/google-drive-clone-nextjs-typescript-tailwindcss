@@ -1,5 +1,5 @@
 import { type Config } from "tailwindcss";
-import { fontFamily } from "tailwindcss/defaultTheme";
+import defaultTheme from "tailwindcss/defaultTheme";
 
 const config: Config = {
   darkMode: ["class"],
@@ -7,7 +7,11 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-geist-sans)", ...fontFamily.sans],
+        sans: ["var(--font-geist-sans)", ...defaultTheme.fontFamily.sans],
+      },
+      fontSize: {
+        hero: ["10rem", { lineHeight: "10rem" }],
+        display: ["15rem", { lineHeight: "10rem" }],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -26,8 +30,8 @@ const config: Config = {
           foreground: "hsl(var(--popover-foreground))",
         },
         primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+          DEFAULT: "#FF00FF",
+          foreground: "#FF00FF",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
