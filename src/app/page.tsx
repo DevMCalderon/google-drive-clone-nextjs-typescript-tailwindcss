@@ -4,8 +4,8 @@ import { useState } from "react";
 import { Folder, FileIcon, Upload, ChevronRight } from "lucide-react";
 import Link from "next/link";
 
-import { File, mockFiles } from "@/lib/mock-data";
-import { Button } from "@/components/ui/Button";
+import { File, mockFiles } from "~/lib/mock-data";
+import { Button } from "~/components/ui/Button";
 
 export default function GoogleDriveClone() {
   const [currentFolder, setCurrentFolder] = useState<string | null>(null);
@@ -40,7 +40,7 @@ export default function GoogleDriveClone() {
   };
 
   return (
-    <div className="min-h-screen bg-mint-550 bg-gray-900 p-8 text-gray-100">
+    <div className="min-h-screen bg-gray-900 p-8 text-gray-100">
       <div className="mx-auto max-w-6xl">
         <div className="mb-6 flex items-center justify-between">
           <div className="flex items-center">
